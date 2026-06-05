@@ -1,0 +1,21 @@
+.logo {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+
+    background: linear-gradient(
+            90deg,
+            #621817 0%,
+            #952423 50%,
+            #C8312F 100%
+    );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    cursor: pointer;
+    transition: filter 0.2s ease;
+}
+
+.logo:hover {
+    filter: brightness(1.2);
+}

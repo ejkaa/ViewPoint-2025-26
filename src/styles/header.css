@@ -1,0 +1,159 @@
+.header {
+    height: 64px;
+
+    padding: 0 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: var(--color-background);
+
+    position: relative;
+
+    border-bottom: 1px solid var(--color-tertiary);
+}
+
+/* ========================================
+   NAVIGATION
+======================================== */
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.header__nav a {
+    font-size: 12px;
+
+    color: var(--color-primary);
+
+    opacity: 0.6;
+
+    transition: opacity 0.2s ease;
+}
+
+.header__nav a:hover {
+    opacity: 1;
+}
+
+/* ========================================
+   THEME TOGGLE
+======================================== */
+
+.theme-toggle {
+    width: 24px;
+    height: 24px;
+
+    cursor: pointer;
+    opacity: 0.8;
+    transition:
+            opacity 0.2s ease,
+            transform 0.2s ease;
+}
+
+.theme-toggle:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+/* ========================================
+   MOBILE MENU BUTTON
+======================================== */
+
+.header__menu-btn {
+    display: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    opacity: 0.8;
+    transition:
+            opacity 0.2s ease,
+            transform 0.2s ease;
+}
+
+.header__menu-btn:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.header__menu-btn img {
+    width: 26px;
+    height: 26px;
+    font-weight: lighter;
+}
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 850px) {
+    .header {
+        height: auto;
+
+        padding: 16px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 16px;
+    }
+
+    /* TOP ROW */
+    .header__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /* RIGHT SIDE */
+    .header__right {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+    }
+
+    /* MENU BUTTON */
+    .header__menu-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background: transparent;
+        border: none;
+
+        cursor: pointer;
+        padding: 0;
+    }
+
+    .header__menu-btn img {
+        width: 24px;
+        height: 24px;
+    }
+
+    /* NAV */
+    .header__nav {
+        display: none;
+
+        flex-direction: row;
+        /*align-items: stretch;*/
+
+        gap: 12px;
+
+        padding-top: 8px;
+    }
+
+    .header__nav--open {
+        display: flex;
+    }
+
+    .header__nav a {
+        font-size: 14px;
+    }
+
+    .header__nav button {
+        width: 100%;
+    }
+}

@@ -1,0 +1,27 @@
+.auth {
+    min-height: calc(100vh - 128px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.auth__card {
+    width: 360px;
+    background-color: var(--color-content);
+    padding: 32px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.auth__title {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.auth__buttons {
+    display: flex;
+    gap: 12px;
+}

@@ -1,0 +1,168 @@
+.friend {
+    min-height: calc(100vh - 128px);
+    padding: 48px;
+
+    background: var(--color-background);
+    color: var(--color-primary);
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* =========================
+   TOP SECTION (same as profile)
+========================= */
+
+.friend__top {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.friend__avatar {
+    width: 120px;
+    height: 120px;
+
+    border-radius: 50%;
+
+    background: var(--color-content);
+    border: 2px solid var(--color-tertiary);
+
+    flex-shrink: 0;
+}
+
+.friend__info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.friend__username {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.friend__bio {
+    margin: 0;
+    color: var(--color-secondary);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+.friend__section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.friend__section-title {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* =========================
+   GRID (same as profile)
+========================= */
+
+.friend__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 16px;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.friend__card {
+    background: var(--color-content);
+
+    border: 1px solid var(--color-tertiary);
+    border-radius: 14px;
+
+    overflow: hidden;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.friend__card:hover {
+    transform: translateY(-4px);
+    border-color: var(--color-accent);
+}
+
+.friend__card img {
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+    display: block;
+}
+
+.friend__card-info {
+    padding: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.friend__card-title {
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: 700;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+
+    overflow: hidden;
+}
+
+.friend__card-meta {
+    margin: 0;
+    font-size: 0.72rem;
+    color: var(--color-secondary);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+    .friend {
+        padding: 32px 24px;
+    }
+
+    .friend__avatar {
+        width: 90px;
+        height: 90px;
+    }
+
+    .friend__username {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 600px) {
+    .friend {
+        padding: 24px 16px;
+    }
+
+    .friend__avatar {
+        width: 72px;
+        height: 72px;
+    }
+
+    .friend__username {
+        font-size: 20px;
+    }
+}

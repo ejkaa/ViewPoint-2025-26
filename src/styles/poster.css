@@ -1,0 +1,27 @@
+.poster {
+    background-color: var(--color-content);
+    position: relative;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.poster__image {
+    border-radius: 12px;
+}
+
+.poster__play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.poster__play:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+    opacity: 1;
+}

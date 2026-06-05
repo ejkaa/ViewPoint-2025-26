@@ -1,0 +1,25 @@
+.content-section__title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    color: var(--color-primary);
+}
+
+.content-section__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 24px;
+}
+
+.content-block {
+    flex: 1 1 calc(16.666667% - 24px);
+    background-color: var(--color-content);
+    border-radius: 8px;
+    cursor: pointer;
+    aspect-ratio: 3 / 4;
+    transition: background-color 0.2s ease;
+}
+
+.content-block:hover {
+    background-color: var(--color-accent);
+}

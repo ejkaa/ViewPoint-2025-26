@@ -1,0 +1,73 @@
+:root {
+    /*Brand*/
+    --color-accent: #621817;
+
+    /*Background*/
+    --color-background: #0D0D0D;
+    --color-content: #1A1A1A;
+    --color-overlay: rgba(0, 0, 0, 0.5);
+
+    /*Text*/
+    --color-primary: #FFFFFF;
+    --color-secondary: #757575;
+    --color-tertiary: #2C2C2C;
+
+    --color-button: #FFFFFF19;
+}
+
+/*If you ever need other opacities:*/
+/*0.1 → 19*/
+/*0.2 → 33*/
+/*0.3 → 4D*/
+/*0.5 → 80*/
+/*0.8 → CC*/
+
+[data-theme="light"] {
+    /*Brand*/
+    --color-accent: #bb1817;
+
+    /*Background*/
+    --color-background: #ffffff;
+    --color-content: #f2f2f2;
+    --color-overlay: rgba(50, 50, 50, 0.5);
+
+    /*Text*/
+    --color-primary: #000000;
+    --color-secondary: #1A1A1A;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Inter, Arial, sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-primary);
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.loading {
+    padding: 64px 0;
+    text-align: center;
+    font-size: 16px;
+    color: var(--color-secondary);
+}
+
+.page {
+    min-height: calc(100vh - 148px);
+}

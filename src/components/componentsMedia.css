@@ -1,0 +1,51 @@
+@media (max-width: 768px) {
+    .button {
+        padding: 6px 10px;
+        font-size: 11px;
+    }
+
+    .comment {
+        padding: 12px;
+        gap: 12px;
+    }
+
+    .comment__avatar {
+        width: 32px;
+        height: 32px;
+    }
+
+    .comment__username,
+    .comment__text {
+        font-size: 13px;
+    }
+
+    .footer {
+        padding: 24px 16px;
+        font-size: 12px;
+    }
+
+    .input {
+        padding: 12px 14px;
+        font-size: 13px;
+    }
+
+
+}
+
+@media (max-width: 1024px) {
+    .content-block {
+        flex: 1 1 calc(20% - 24px);
+    }
+}
+
+@media (max-width: 768px) {
+    .content-block {
+        flex: 1 1 calc(25% - 24px);
+    }
+}
+
+@media (max-width: 480px) {
+    .content-block {
+        flex: 1 1 calc(33.333333% - 24px);
+    }
+}
